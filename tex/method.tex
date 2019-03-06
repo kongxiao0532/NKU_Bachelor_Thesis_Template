@@ -1,0 +1,87 @@
+% !TeX root = ../main.tex
+% -*- coding: utf-8 -*-
+
+\chapter{常用包}
+\label{chpt:method}
+
+\section{The Tikz 绘图Package}
+\label{sec:method:tikz}
+
+
+The {\scshape pdf}\ package, where ``{\scshape pdf}'' is supposed to mean ``portable
+graphics format'' (or ``pretty, good, functional'' if you
+prefer\dots), is a package for creating graphics in an ``inline''
+manner. It defines a number of \TeX\ commands that draw
+graphics. For example, the code \verb|\tikz \draw (0pt,0pt) -- (20pt,6pt);|
+yields the line \tikz \draw (0pt,0pt) -- (20pt,6pt); and the code \verb|\tikz \fill[orange] (1ex,1ex) circle (1ex);| yields \tikz
+\fill[orange] (1ex,1ex) circle (1ex);.
+
+\begin{figure}[h]
+    \centering
+    \input{./figure/pgf}
+    \caption{\label{fig:exmaple1} 示例图1}
+\end{figure}
+
+In a sense, when you use {\scshape pdf}\ you ``program'' your graphics, just
+as you ``program'' your document when you use \TeX.  You get all
+the advantages of the ``\TeX-approach to typesetting'' for your
+graphics: quick creation of simple graphics, precise positioning, the
+use of macros, often superior typography. You also inherit all the
+disadvantages: steep learning curve, no \textsc{wysiwyg}, small
+changes require a long recompilation time, and the code does not
+really ``show'' how things will look like.
+
+
+
+
+
+\begin{figure}
+    \centering
+    \input{./figure/process}
+    \caption{\label{fig:exmaple2} 示例流程图2}
+\end{figure}
+
+
+\section{代码块}
+\label{sec:method:code}
+
+python 代码可以直接使用\textbf{python}环境
+
+\begin{python}[caption={斐波那契Python}]
+def fibonacci(n):
+    # Fibonacci number
+    if n < 0:
+        return False
+    if n <= 1:
+        return n
+    return fibonacci(n-2) + fibonacci(n-1)
+\end{python}
+
+C/C++ 代码可以直接使用\textbf{cpp}环境
+
+\begin{cpp}[caption={斐波那契C++}]
+unsigned long Fibonacci(int n)
+{
+    // Fibonacci start from 0
+    if (n <= 1) 
+    {
+        return n;
+    }
+    else 
+    {
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
+}
+\end{cpp}
+
+其他代码,使用\textbf{lstlisting}指明 \textbf{language}即可，如matlab代码
+
+\begin{lstlisting}[caption={Matlab代码},language=Matlab]
+function a = factorial(n)
+% return n!
+    if n==0
+        a=1;
+    else
+        a=n * factorial(n-1);
+    end
+\end{lstlisting}
