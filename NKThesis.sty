@@ -133,10 +133,10 @@
 \RequirePackage{mathptmx}
 \DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
 
-\def\songti{\rmfamily\upshape}
-\def\heiti{\bfseries}
-\def\kaiti{\itshape}
-\def\fangsong{\ttfamily}
+% \def\songti{\rmfamily\upshape}
+% \def\heiti{\bfseries}
+% \def\kaiti{\itshape}
+% \def\fangsong{\ttfamily}
 \let\kai\kaiti
 \let\song\songti
 \let\hei\heiti
@@ -489,18 +489,20 @@
 \def\NKT@definezihao#1#2#3{
   \def#1{\fontsize{#2}{#3}\selectfont}}
 
+\NKT@definezihao{\zihaonku}{35}{35}
 \NKT@definezihao{\zihaochu}{42}{50}
 \NKT@definezihao{\zihaoxiaochu}{36}{44}
-\NKT@definezihao{\zihaoyi}{28}{34}
-\NKT@definezihao{\zihaoer}{22}{26}
-\NKT@definezihao{\zihaoxiaoer}{18}{22}
-\NKT@definezihao{\zihaosan}{15.7}{19}
-\NKT@definezihao{\zihaosi}{14}{17}
-\NKT@definezihao{\zihaoxiaosi}{12}{14}
-\NKT@definezihao{\zihaowu}{10.5}{12}
-\NKT@definezihao{\zihaoxiaowu}{9}{11}
-\NKT@definezihao{\zihaoliu}{7.875}{9}
-\NKT@definezihao{\zihaoqi}{5.25}{6}
+\NKT@definezihao{\zihaoyi}{26}{26}
+\NKT@definezihao{\zihaoer}{22}{22}
+\NKT@definezihao{\zihaoxiaoer}{18}{18}
+\NKT@definezihao{\zihaosan}{16}{16}
+\NKT@definezihao{\zihaoxiaosan}{15}{15}
+\NKT@definezihao{\zihaosi}{14}{14}
+\NKT@definezihao{\zihaoxiaosi}{12}{12}
+\NKT@definezihao{\zihaowu}{10.5}{10.5}
+\NKT@definezihao{\zihaoxiaowu}{9}{9}
+\NKT@definezihao{\zihaoliu}{7.875}{7.875}
+\NKT@definezihao{\zihaoqi}{5.25}{5.25}
 
 \def\figurenote#1{\zihaoxiaowu #1}
 
@@ -629,11 +631,16 @@
 \def\NKT@string@tongdengxuelishuoshi{同等学力硕士}
 
 \NKT@definekey{论文题目(中文)}      {lunwentimuzh}
-\NKT@definekey{副标题}              {fubiaoti}
 \NKT@definekey{论文题目(英文)}      {lunwentimuy}
-\NKT@definekey{论文作者}            {lunwenzuozhe}
 \NKT@definekey{学号}                {xuehao}
+\NKT@definekey{姓名}                {xingming}
+\NKT@definekey{年级}                {nianji}
+\NKT@definekey{学院}                {xueyuan}
+\NKT@definekey{系别}                {xibie}
+\NKT@definekey{专业}                {zhuanye}
+\NKT@definekey{完成日期}                {wanchengriqi}
 \NKT@definekey{指导教师}            {zhidaojiaoshi}
+\NKT@definekey{校外指导教师}            {xiaowaizhidaojiaoshi}
 \NKT@definekey{申请学位}            {shenqingxuewei}
 \NKT@definekey{培养单位}            {peiyangdanwei}
 \NKT@definekey{学科专业}            {zhuanye}
@@ -683,8 +690,8 @@
     \pagestyle{empty}
     \@twosidefalse
     \NKTtitlepage
-    \NKTauthorization
-    \NKTdeclaration
+    % \NKTauthorization
+    % \NKTdeclaration
     \clearpage
     \ifx\NKT@key@lunwenleibie\NKT@string@boshi
       \global\@twosidetrue
