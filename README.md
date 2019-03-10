@@ -1,21 +1,23 @@
+# 南开大学本科生毕业论文(毕业设计)LaTeX模板
 ## 模板来源
-南开大学硕士毕业论文(博士论文)Latex模板 From https://github.com/NewFuture/NKThesis
-
-当前标准 [南开大学研究生学位论文写作规范（修订版）201709](http://graduate.nankai.edu.cn/2017/0222/c3325a56863/page.htm)
+[南开大学研究生（博士生）毕业论文LaTeX模板](https://github.com/NewFuture/NKThesis)
 
 thanks to @darfux， @NewFuture
 
-### 编写
+## 当前标准
+[南开大学本科毕业论文（设计）指导手册2018],[本科生论文格式要求补充规定2016V1_2_21]
 
-#### 编译方式
+## 编写
+
+### 编译方式
 `xelatex`(Tex编译)+`biber`(参考文献编译)
 
-##### 编译脚本
+#### 编译脚本
 
 * windows 双击 `build.cmd`即可
 * linux 在此目录下运行 `./build.cmd`即可
 
-##### 手动编译:
+#### 手动编译:
 
 ```
 xelatex main
@@ -24,7 +26,7 @@ xelatex main
 xelatex main
 ```
 
-#### 推荐编辑器和工具
+### 推荐编辑器和工具
 
 基本要求: 自动补全，语法高亮，错误提示,实时预览,光标同步
 
@@ -33,14 +35,14 @@ xelatex main
 * [VS code](https://code.visualstudio.com/) + [LaTeX-Workshop插件](https://github.com/James-Yu/LaTeX-Workshop)
 
 
-### 说明
+## 说明
 
-#### 文件
+### 文件
 * [main.tex](main.tex)模板入口
 * [nkthesis.bib](nkthesis.bib) 参考文献bib文件，可使用Google学术或百度学术直接导出bibtex格式
 * [tex/文件夹](tex/) 每一章单独一个文件,主要写作部分
 
-#### 其他
+### 其他
 
 * 支持绘图
 * 支持语法高亮(`python`和`c++`特别优化)
