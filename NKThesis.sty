@@ -797,13 +797,13 @@
 
 % 绘图库
 \RequirePackage{tikz,mathpazo,pgf}
-\usetikzlibrary{shapes.geometric, 
+\usetikzlibrary{shapes.geometric,
         arrows,
         decorations.pathmorphing,
-        backgrounds, 
-        positioning, 
+        backgrounds,
+        positioning,
         fit,
-        petri, 
+        petri,
         automata
 }
 \RequirePackage{subfigure}
@@ -852,9 +852,9 @@
   {!}{{\setoperatorcolour!}}{1}%
   % {/}{{\setoperatorcolour/}}{1}%
   {\|}{{\setoperatorcolour{\|}}}1%
-  {\&}{{\setoperatorcolour{\&}}}1%  
-  {=}{{\setliteratecolour=}}{1}%  
-  {:}{{\setliteratecolour:}}{1}%  
+  {\&}{{\setoperatorcolour{\&}}}1%
+  {=}{{\setliteratecolour=}}{1}%
+  {:}{{\setliteratecolour:}}{1}%
   {.}{{\setliteratecolour{.}}}1%
   {,}{{\setliteratecolour{,}}}1%
   {>>}{{\setliteratecolour{>>}}}2%
@@ -900,7 +900,7 @@
   emphstyle={[6]\color{keywordcolour}\bfseries},
   % literate=*%
   % {**}{{\setliteratecolour{**}}}2%
-  % {/}{{\setoperatorcolour/}}{1}%  
+  % {/}{{\setoperatorcolour/}}{1}%
   % {>>>}{\pythonprompt}{3}%
   % ,%
   breaklines=false%
@@ -908,13 +908,13 @@
 \lstdefinestyle{c++}{
   language=c++,
   style=Code,
-  otherkeywords={\%},  
+  otherkeywords={\%},
   emph={int,char,double,float,unsigned, ssize_t,uint64_t,uint32_t,uint16_t,bool},
   emphstyle={\color{blue}}
 }
 \lstset{style=Code}
 
-% python 
+% python
 \lstnewenvironment{python}[1][]
 {
 \noindent\hspace{0.008\textwidth}\minipage[c]{0.98\textwidth}

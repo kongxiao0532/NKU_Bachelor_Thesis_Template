@@ -19,7 +19,9 @@
 % \usepackage{cases}
 % \usepackage{multirow}
 % \usepackage{tocbibind}
-
+\usepackage{ulem}
+\usepackage{xeCJKfntef} %CJKunderline
+\xeCJKsetup{underline= {format = \color{black}, thickness=0.4pt}} %CJKunderline setting
 
 % 参考文献
 \addbibresource{nkthesis.bib}
@@ -44,6 +46,8 @@
 %
 \NKTsetup{
 	% 封面设置
+	论文题目(中文) = 我是爱南开的,
+	论文题目(英文) = I Love Nankai,
 	学号           = 19190062,
 	姓名       = 周恩来,
 	年级          = 1919级,
@@ -53,8 +57,6 @@
 	完成日期      = ,
 	指导教师       = 张伯苓教授,
 	校外指导教师   = ,
-	论文题目(中文) = 我是爱南开的,
-	论文题目(英文) = I Love Nankai
 }
 
 
